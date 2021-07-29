@@ -16,7 +16,7 @@ const SingleProductPage = ({ id, singleProduct, singleProductLoaded }) => {
   if (singleProduct) {
     const { name, imageUrl, sizeWidth, sizeHeight, weight } = singleProduct;
     return (
-      <div>
+      <div className='container'>
         <h2>{name}</h2>
         <img src={imageUrl} alt='prod' />
         <p>{sizeHeight}</p>

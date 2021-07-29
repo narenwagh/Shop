@@ -12,7 +12,7 @@ const SingleItem = ({ item, history }) => {
     history.push(`/single-product/${productId}`);
   };
   return (
-    <div className='single-item'>
+    <div className='card' key={productId}>
       <img
         src={imageUrl}
         width='150'

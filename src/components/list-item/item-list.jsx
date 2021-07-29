@@ -30,7 +30,7 @@ const ItemList = ({ items, loading, itemsLoaded }) => {
     <section className='flex-container'>
       {items &&
         items.map((item) => {
-          return <SingleItem item={item} />;
+          return <SingleItem item={item} key={item.productId} />;
         })}
     </section>
   );
